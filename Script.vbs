@@ -9,7 +9,7 @@ Dim strDateTime, strLocalDateTime, strMsg, strNewdateTime, strURL
  
 ' Defaults
 intThreshold = 10
-strURL       = "http://time.gov/"
+strURL       = "http://pool.ntp.org/"
  
 ' Check command line arguments
 With WScript.Arguments
@@ -127,7 +127,7 @@ Set objWMIService = Nothing
 Sub Syntax( )
 	Dim strMsg
 	strMsg = vbCrLf _
-	       & WScript.ScriptName & ", Version 1.00" _
+	       & WScript.ScriptName & ", Version 1.01" _
 	       & vbCrLf _
 	       & "Synchronize the local system date and time with a web server" _
 	       & vbCrLf & vbCrLf _
@@ -135,7 +135,7 @@ Sub Syntax( )
 	       & vbCrLf & vbCrLf _
 	       & "Where:" & vbTab & "server " & vbtab & "is the URL of the web server to synchronize date" _
 	       & vbCrLf _
-	       & "      " & vbTab & "       " & vbTab & "and time with (default: http://time.gov)" _
+	       & "      " & vbTab & "       " & vbTab & "and time with (default: http://pool.ntp.org/)" _
 	       & vbCrLf _
 	       & "      " & vbTab & "seconds" & vbTab & "is the threshold in seconds (i.e. if the difference" _
 	       & vbCrLf _ 
