@@ -9,7 +9,7 @@ Dim strDateTime, strLocalDateTime, strMsg, strNewdateTime, strURL
  
 ' Defaults
 intThreshold = 10
-strURL       = "http://www.xs4all.nl/"
+strURL       = "http://time.gov"
  
 ' Check command line arguments
 With WScript.Arguments
